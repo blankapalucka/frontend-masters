@@ -1,4 +1,6 @@
 export interface AdviceModel {
-  readonly slip_id: number;
-  readonly advice: string;
+  slip: {
+    id: number;
+    advice: string;
+  }
 }

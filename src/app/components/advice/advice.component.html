@@ -1,2 +1,12 @@
-<h1>kotek</h1>
-<ng-container *ngIf="randomAdvice$ | async as item">{{item.advice}}</ng-container>
+
+<div class="green"> Advice #
+  <ng-container *ngIf="randomAdvice$ | async as item">
+    {{item.slip.id}} </ng-container>
+</div>
+<div class="cyjan">
+  <ng-container *ngIf="randomAdvice$ | async as item">
+    {{item.slip.advice}}
+  </ng-container>
+</div>
+
+<!--{{advice$ | async}}-->

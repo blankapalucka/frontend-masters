@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 import { Observable } from 'rxjs';
-import { AdviceModel } from '../../models/advice.model';
 import { AdviceService } from '../../services/advice.service';
+import {AdviceModel} from "../../models/advice.model";
 
 @Component({
   selector: 'app-advice',
