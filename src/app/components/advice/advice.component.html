@@ -1,2 +1,2 @@
 <h1>kotek</h1>
-{{randomAdvice$ | async}}
+<ng-container *ngIf="randomAdvice$ | async as item">{{item.advice}}</ng-container>

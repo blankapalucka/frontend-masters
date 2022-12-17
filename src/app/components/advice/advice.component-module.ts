@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { AdviceComponent } from './advice.component';
-import {AsyncPipe} from "@angular/common";
+import {AsyncPipe, NgIf} from "@angular/common";
 
 @NgModule({
   imports: [
-    AsyncPipe
+    AsyncPipe,
+    NgIf
   ],
   declarations: [AdviceComponent],
   providers: [],
