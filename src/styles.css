@@ -1,19 +1,76 @@
 /* You can add global styles to this file, and also import other style files */
-@font-face {
-  font-family: Manrope;
-  src: url(https://fonts.google.com/specimen/Manrope);
-}
- .cyjan {
-  font-family: Manrope;
-  font-weight: 800;
-  font-size: 28px;
-   color: hsl(193, 38%, 86%);
+body {
+  background-color: hsl(218, 23%, 16%);
+  text-align: center;
+  font-family: Manrope, serif;
 
 }
-.green
-{
+
+@font-face {
   font-family: Manrope;
+  src: url(assets/Manrope/Manrope-VariableFont_wght.ttf);
+}
+
+div, div * {
+  font-family: Manrope, serif;
+}
+
+.cyjan {
+  font-family: Manrope, serif;
   font-weight: 800;
   font-size: 28px;
+  color: hsl(193, 38%, 86%);
+  padding: 20px;
+
+}
+
+.green {
+  font-family: Manrope, serif;
+  font-size: 14px;
   color: hsl(150, 100%, 66%);
+  padding: 20px;
+}
+
+
+.box {
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 25px;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 100px;
+  margin-bottom: 25%;
+  padding: 20px;
+}
+
+.dice {
+  background-color: hsl(150, 100%, 66%);
+  height: 50px;
+  width: 50px;
+  margin-left: 45%;
+  margin-right: 50%;
+  border-radius: 50%;
+  position: relative;
+  top: 45px;
+}
+
+.innerdice {
+  position: relative;
+  top: 12px;
+}
+
+.divider {
+  width: 444px;
+  height: 16px;
+}
+
+@media screen and (max-width: 500px) {
+  .box {
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 100px;
+    margin-bottom: 25%;
+    padding: 20px;
+  }
 }

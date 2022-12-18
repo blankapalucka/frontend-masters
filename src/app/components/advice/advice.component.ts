@@ -1,7 +1,7 @@
-import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
-import { Observable } from 'rxjs';
-import { AdviceService } from '../../services/advice.service';
-import {AdviceModel} from "../../models/advice.model";
+import {ChangeDetectionStrategy, Component, ViewEncapsulation} from '@angular/core';
+import {Observable} from 'rxjs';
+import {AdviceModel} from '../../models/advice.model';
+import {AdviceService} from '../../services/advice.service';
 
 @Component({
   selector: 'app-advice',
@@ -10,8 +10,12 @@ import {AdviceModel} from "../../models/advice.model";
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AdviceComponent {
-  readonly randomAdvice$: Observable<AdviceModel> = this._adviceService.getAdvice();
+  randomAdvice$: Observable<AdviceModel> = this._adviceService.getAdvice();
 
   constructor(private _adviceService: AdviceService) {
+  }
+
+  getNewAdvice(): void {
+    this.randomAdvice$ = this._adviceService.getAdvice();
   }
 }
